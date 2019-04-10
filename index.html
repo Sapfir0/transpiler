@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html> <!-- html 5 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Traspiler</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js" type="module"></script>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <div class="main"> 
+        <header> 
+        <h1>Politeh</h1>
+        </header>
+        <h3>Nemerle code:</h3>
+        <div class="nemerle">
+            <pre><code class="nemerle-language">
+def func ( x:int )
+{
+mutable res:int;
+res=0;
+
+    if ( x == 256 )
+    {
+        x = x + 10;
+                    
+    }
+    res= res-1;
+    res+=1;
+    return x;
+} 
+            </div>
+
+        </code></pre>
+
+        <h3>JavaScript code:</h3>
+
+        <div class="js"> 
+            <script class="js"></script>
+                <pre><code class="javascript-language">
+            </code></pre>
+        </div>
+
+        
+        <div class="autoPt"> 
+            <h2> Запустить код</h2>
+
+                    <input  pattern="^\w{1}.*$" id="input2" required>
+                    <div class="a"> 
+                        (<input  pattern="^\d+$" id="input" required>) 
+                    </div> 
+                    <!-- отображение результата -->
+                    <div class="b"> 
+                            Вывод: <div id="res">
+                                 </div>
+                    </div>
+                
+            </div>
+        <!-- раскомменть и появится дерево -->
+        <!-- <div id="run_out_id" > </div> -->
+        
+    
+    </div>
+
+    </body>
+</html>

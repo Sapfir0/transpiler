@@ -1,0 +1,56 @@
+{
+    "indentation": {
+        "regexp": "^(\\s+)",
+        "skip": true
+    },
+    "comment" : {
+        "regexp" : "\\\\.*",
+        "skip" :true
+    },
+    "keywords": {
+        "regexp": "^([A-Za-z]{2,})\\b",
+        "list" : [
+            "mutable", "def","when","var","function","if","byte","short","int", "get", "public", "foreach",
+            "uint","long","float","double","decimal","string","object","bool","char","void",
+            "true","false","using","match","macro","loop", "static", "class", "return"
+        ]       
+    },
+    "ident": {
+        "regexp": "^([a-zA-Z][_a-zA-Z0-9]*)\\b",
+        "link" : "arrayOfIdent"
+    },
+    "operators": {
+        "regexp": "^(([^a-zA-Z0-9_\\s]{2})|(\\W))",
+        "list": [
+            "+", "==", "-", "*", "/", "=>", "|",
+            ">", ">=", "<", "/=", "=", "+="
+        ]
+    },
+    "boolean_operators": {
+        "regexp" : "^(and|or|not)",
+        "list" : ["and", "or", "not"]
+    },
+    "string_constant": {
+        "regexp": "^((\".*?\"))",
+        "link": "arrayOfConst"
+    },
+    "real_dig_const": {
+        "regexp": "^(\\d*\\.\\d+)\\b",
+        "link": "arrayOfConst"
+    },
+    "int_dig_const": {
+        "regexp": "^(\\d+)\\b",
+        "link": "arrayOfConst"
+    },
+    "separators": {
+        "regexp": "^([[\\])(\\}\\{;,;.:]{1})"
+    },
+    "error": {
+        "regexp": "^(.*?)(?=[\\s]|[\\n])"
+    }
+}
+
+
+
+
+

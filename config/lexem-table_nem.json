@@ -1,0 +1,47 @@
+{
+    "indentation":{ 
+        "regexp":"^(\\s+)",
+        "skip": true
+    },
+
+    "keywords":{
+        "regexp":"^([A-Za-z]{2,})\\b",
+        "color":"#41C6A3",
+        "list" : [
+            "def","when","var","function","if","byte","short","int", "get", "public", "foreach",
+            "uint","long","mutable","string","object","bool","char","void",
+            "true","false","using","return","macro","WriteLine","Write","loop", "static", "class"
+        ]
+    },
+    "ident":{
+        "regexp":"^([A-Za-z_$]\\w*)\\b",
+        "color":"#BCCF9A",
+        "link" : "arrayOfIdent"
+    },
+    "string-const":
+    {
+        "regexp":"^(\".*?\")",
+        "color":"#EC7600"
+    },
+    "operators":
+    {
+        "regexp":"^(\\|{1}|-{1}|=>{1}|<{1}|>{1}|={1,3}|\\+{1,2})"
+        
+    },
+    "separators":
+    {
+        "regexp":"^([[\\])(\\}\\{:,;.]{1})"
+    },
+    "digit_const":
+    {
+        "regexp":"^(\\d+)\\b",
+        "color":"#D69056",
+        "link" : "arrayOfConst"
+    },
+    "error":
+    {
+        "regexp":"^(.*?)(?=[\\s]|[\n])",
+        "color":"#D70000"
+    }
+
+}
